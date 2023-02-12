@@ -87,5 +87,5 @@ the script `eval.sh` has one parameter, namely `d`.
 - `c`: **c**heckpoint  (`checkpoint1`,`checkpoint_best`)
 
 ```shell
-bash eval.sh -d dailydialog
+bash eval.sh -d empatheticdialog_annotated -t empatheticdialog_freeze_decoder_no_smooth -m ved_large_no_ngram_attn_pre_no_smooth -s beam -c checkpoint_best
 ```
