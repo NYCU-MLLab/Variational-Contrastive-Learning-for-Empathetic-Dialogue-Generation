@@ -30,6 +30,7 @@ pip install torch==1.12.1+cu116 --extra-index-url https://download.pytorch.org/w
 ```
 
 Since some errors occur when using fairseq==0.9.0 with torch==1.12.1, we have fixed these errors in fairseq_fixed.
+
 Please operate as following
 ```
 rm -r /usr/local/lib/python3.7/dist-packages/fairseq
