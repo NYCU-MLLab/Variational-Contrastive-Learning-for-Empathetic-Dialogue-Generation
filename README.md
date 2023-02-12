@@ -18,6 +18,8 @@ apt install python3.7-dev
 ln -sf /usr/bin/python3.7 /usr/bin/python3
 apt install python3.7-distutils
 
+pip install torch --extra-index-url https://download.pytorch.org/whl/cu116
+
 sudo apt install default-jdk
 curl https://install.meteor.com/ | sh
 
