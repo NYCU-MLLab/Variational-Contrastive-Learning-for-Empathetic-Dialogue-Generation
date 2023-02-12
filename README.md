@@ -10,6 +10,14 @@
 - nltk==3.5
 
 ```shell
+apt install pip
+add-apt-repository ppa:deadsnakes/ppa
+apt-get update
+apt install python3.7-dev
+
+ln -sf /usr/bin/python3.7 /usr/bin/python3
+apt install python3.7-distutils
+
 sudo apt install default-jdk
 curl https://install.meteor.com/ | sh
 
