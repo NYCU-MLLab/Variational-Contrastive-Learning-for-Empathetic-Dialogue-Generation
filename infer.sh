@@ -26,15 +26,15 @@ done
 PROJECT_PATH='.'
 USER_DIR=${PROJECT_PATH}/src
 DATA_DIR=${PROJECT_PATH}/data/finetune/${DATASET}
-# SAVE_DIR=${DATA_DIR}/infer/${TRAINED_DATASET}/${MODEL_TYPE}
-SAVE_DIR=${DATA_DIR}/infer/exp/${TRAINED_DATASET}/${MODEL_TYPE}
+SAVE_DIR=${DATA_DIR}/infer/${TRAINED_DATASET}/${MODEL_TYPE}
+# SAVE_DIR=${DATA_DIR}/infer/exp/${TRAINED_DATASET}/${MODEL_TYPE}
 
 
 if [ ${TRAINED_DATASET} = "reddit" ]; then
   MODEL_DIR=${PROJECT_PATH}/models/dialogved_${MODEL_TYPE}.pt
 else
-  # MODEL_DIR=${PROJECT_PATH}/data/finetune/${TRAINED_DATASET}/checkpoints/${MODEL_TYPE}/${CHECKPOINT}.pt
-  MODEL_DIR=${PROJECT_PATH}/data/exp/empatheticdialog/${TRAINED_DATASET}/checkpoints/${MODEL_TYPE}/${CHECKPOINT}.pt
+  MODEL_DIR=${PROJECT_PATH}/data/finetune/${TRAINED_DATASET}/checkpoints/${MODEL_TYPE}/${CHECKPOINT}.pt
+  # MODEL_DIR=${PROJECT_PATH}/data/exp/empatheticdialog/${TRAINED_DATASET}/checkpoints/${MODEL_TYPE}/${CHECKPOINT}.pt
 fi
 
 if [ ! -d  ${SAVE_DIR} ]; then
