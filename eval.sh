@@ -32,16 +32,7 @@ if [ "$DATASET" == "dailydialog" ]; then
     -name dailydialog \
     -hyp "${PRED_FILE}" \
     -ref "${DATA_DIR}"/processed/test.tgt
-elif [ "$DATASET" == "dstc7avsd" ]; then
-  python3 utils/evaluate.py \
-    -name dstc7avsd \
-    -hyp "${PRED_FILE}" \
-    -ref "${DATA_DIR}"/processed/test_multi_refs.tgt
-elif [ "$DATASET" == "personachat"  ]; then
-  python3 utils/evaluate.py \
-    -name personachat \
-    -hyp "${PRED_FILE}" \
-    -ref "${DATA_DIR}"/processed/test.tgt
+
 elif [ "$DATASET" == "empatheticdialog"  ]; then
   python3 utils/evaluate.py \
     -name empatheticdialog \
@@ -52,16 +43,6 @@ elif [ "$DATASET" == "empatheticdialog_annotated"  ]; then
     -name empatheticdialog_annotated \
     -hyp "${PRED_FILE}" \
     -ref "${DATA_DIR}"/processed/dialog/test.tgt
-elif [ "$DATASET" == "MIME"  ]; then
-  python3 utils/evaluate.py \
-    -name empatheticdialog_annotated \
-    -hyp "/home/Thesis/DialogVED/MIME evaluation.txt" \
-    -ref "/home/Thesis/DialogVED/data/finetune/empatheticdialog_annotated/processed/dialog/test.tgt"
-elif [ "$DATASET" == "MoEL"  ]; then
-  python3 utils/evaluate.py \
-    -name empatheticdialog_annotated \
-    -hyp "/home/Thesis/DialogVED/MoEL evaluation.txt" \
-    -ref "/home/Thesis/DialogVED/data/finetune/empatheticdialog_annotated/processed/dialog/test.tgt"
 else
   echo 'dataset '"$DATASET"' not found!'
   exit 1
