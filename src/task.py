@@ -283,11 +283,11 @@ class DialogVEDTask_EMP(TranslationTask):
         # Empathetic_new
         emotion_dict = None
         if args.emotion_labels:
-            emotion_dict = cls.load_label_dictionary('/home/Thesis/DialogVED/data/finetune/empatheticdialog_annotated/binary/emotions/dict.emotion.txt')
+            emotion_dict = cls.load_label_dictionary('./data/finetune/empatheticdialog_annotated/binary/emotions/dict.emotion.txt')
             print('| emotion_dictionary: {} types'.format(len(emotion_dict)))
         action_dict = None
         if args.action_labels:
-            action_dict = cls.load_label_dictionary('/home/Thesis/DialogVED/data/finetune/empatheticdialog_annotated/binary/actions/dict.action.txt')
+            action_dict = cls.load_label_dictionary('./data/finetune/empatheticdialog_annotated/binary/actions/dict.action.txt')
             print('| action_dictionary: {} types'.format(len(action_dict)))
         
         return cls(args, d, d ,emotion_dict , action_dict)
