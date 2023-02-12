@@ -25,6 +25,10 @@ curl https://install.meteor.com/ | sh
 
 pip install -r requirements.txt
 ```
+If you don't install cuda, you can install with following
+```
+pip install torch==1.12.1+cu116 --extra-index-url 
+```
 
 #### Preprocess
 
