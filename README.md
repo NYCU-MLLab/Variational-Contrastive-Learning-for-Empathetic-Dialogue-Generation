@@ -4,9 +4,10 @@
 
 - python==3.7
 - torch==1.12.1
+- fairseq==0.9.0
 - tensorboardX==1.7
 - pytorch_transformers
-- sklearn
+- scikit-learn
 - nltk==3.5
 
 ```shell
@@ -27,6 +28,14 @@ If you don't install cuda, you can install with following
 ```
 pip install torch==1.12.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116
 ```
+
+Since some errors occur when using fairseq==0.9.0 with torch==1.12.1, we have fixed these errors in fairseq_fixed.
+Please operate as following
+```
+rm -r /usr/local/lib/python3.7/dist-packages/fairseq
+cp -a /home/Variational-Contrastive-Learning-for-Empathetic-Dialogue-Generation/fairseq_01 /usr/local/lib/python3.7/dist-packages/fairseq
+```
+
 
 #### Preprocess
 
@@ -49,7 +58,7 @@ the script `train.sh` has three parameters, namely `p`, `t` and `d`.
 - `d`: fine-tuned **d**ataset (`dailydialog`, 'empatheticdialog_freeze_decoder_no_smooth')
 
 ```shell
-bash train.sh -p /remote-home/models/dialogved_standard.pt -t dialogved_large_no_ngram_attn_pre -d empatheticdialog_annotated
+bash train.sh -p /home/dialogved_standard.pt -t dialogved_large_no_ngram_attn_pre -d empatheticdialog_annotated
 ```
 
 #### Inference
@@ -63,7 +72,7 @@ the script `infer.sh` has two parameters, namely `d` and `s`.
 - `c`: **c**heckpoint  (`checkpoint1`,`checkpoint_best`)
 
 ```shell
-bash infer.sh -d empatheticdialog_annotated -s beam -t 
+bash infer.sh -d empatheticdialog_annotated -s beam -t empatheticdialog_freeze_decoder_no_smooth -m ved_large_no_ngram_attn_pre_no_smooth -c checkpoint_best
 ```
 
 #### Evaluation
