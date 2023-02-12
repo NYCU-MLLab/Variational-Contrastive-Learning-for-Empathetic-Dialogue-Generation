@@ -49,6 +49,10 @@ bash preprocess/process_empathetic.sh
 ```shell
 bash preprocess/binarize_empathetic.sh
 ```
+Pre-trained model we use is following:
+[Pre-trained model](https://drive.google.com/file/d/1VqB_1x9FCJisCW3e8sHG0e3uGVrVJR4H/view?usp=sharing)
+
+
 
 #### Training
 
