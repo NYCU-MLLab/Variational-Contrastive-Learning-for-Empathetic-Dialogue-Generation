@@ -1,13 +1,13 @@
 import os
 import sys
-sys.path.append('/home/Thesis/DialogVED')
+sys.path.append('/home/Variational-Contrastive-Learning-for-Empathetic-Dialogue-Generation')
 # sys.path.append('/Users/lemuria_chen/PycharmProjects/DialogVED')
 
 from utils.processor import convert_empathetic_dialog, check
 
 
 # FINETUNE_PREFIX_PATH = '/remote-home/wchen/project/DialogVED/data/finetune'
-FINETUNE_PREFIX_PATH = '/home/Thesis/DialogVED/data/finetune'
+FINETUNE_PREFIX_PATH = '/home/Variational-Contrastive-Learning-for-Empathetic-Dialogue-Generation'
 
 
 ORIGINAL_PATH = os.path.join(FINETUNE_PREFIX_PATH, 'empatheticdialog_annotated/original_data/dialog')

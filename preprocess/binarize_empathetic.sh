@@ -2,7 +2,7 @@
 # in this paper we consider three corpus, i.e., dailydialog, dstc7avsd, personachat
 # running this script will cause all files with the same name in the `BINARY_DIR` folder will be overwritten
 
-PROJECT_PATH=/home/Thesis/DialogVED
+PROJECT_PATH=/home/Variational-Contrastive-Learning-for-Empathetic-Dialogue-Generation
 #PROJECT_PATH=/remote-home/wchen/project/DialogVED
 
 USER_DIR=${PROJECT_PATH}/src
