@@ -37,12 +37,7 @@ rm -r /usr/local/lib/python3.7/dist-packages/fairseq
 cp -a /home/Variational-Contrastive-Learning-for-Empathetic-Dialogue-Generation/fairseq_fixed /usr/local/lib/python3.7/dist-packages/fairseq
 ```
 
-
-#### Preprocess
-
-```shell
-bash preprocess/process_empathetic.sh
-```
+Before running binarization, you need to fix "PROJECT_PATH" in preprocess/binarize_empathetic.sh to your own path.
 
 #### Binarization
 
