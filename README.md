@@ -67,7 +67,7 @@ the script `train.sh` has three parameters, namely `p`, `t` and `d`.
 - `d`: fine-tuned **d**ataset (`dailydialog`, 'empatheticdialog_freeze_decoder_no_smooth')
 
 ```shell
-bash train.sh -p /home/dailydialog_ved_large.pt -t dialogved_large_no_ngram_attn_pre -d empatheticdialog_annotated
+bash train.sh -p /home/dailydialog_ved_large.pt -t dialogved_large_no_ngram_attn_pre -d empatheticdialog_freeze_decoder_no_smooth
 ```
 
 #### Inference
