@@ -74,7 +74,7 @@ bash train.sh -p /home/dailydialog_ved_large.pt -t dialogved_large_no_ngram_attn
 
 the script `infer.sh` has two parameters, namely `d` and `s`.
 
-- `d`: fine-tuned **d**ataset (`empatheticdialog_annotated`)
+- `d`: target **d**ataset (`empatheticdialog_annotated`)
 - `s`: decoding **s**trategy (`greedy`, `beam` or `sampling`)
 - `t`: **t**rained loss (`empatheticdialog_freeze_decoder_no_smooth`)
 - `m`: **m**odel tpye (`dialogved_large_no_ngram_attn_pre`)
@@ -88,7 +88,7 @@ bash infer.sh -d empatheticdialog_annotated -s beam -t empatheticdialog_freeze_d
 
 the script `eval.sh` has one parameter, namely `d`.
 
-- `d`: fine-tuned **d**ataset (`empatheticdialog_annotated`)
+- `d`: target **d**ataset (`empatheticdialog_annotated`)
 - `t`: **t**rained loss (`empatheticdialog_freeze_decoder_no_smooth`)
 - `m`: **m**odel tpye (`dialogved_large_no_ngram_attn_pre`)
 - `s`: decoding **s**trategy (`greedy`, `beam` or `sampling`)
