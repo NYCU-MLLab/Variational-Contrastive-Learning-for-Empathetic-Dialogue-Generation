@@ -34,7 +34,7 @@ Since some errors occur when using fairseq==0.9.0 with torch==1.12.1, we have fi
 Please operate as following
 ```
 rm -r /usr/local/lib/python3.7/dist-packages/fairseq
-cp -a /home/Variational-Contrastive-Learning-for-Empathetic-Dialogue-Generation/fairseq_01 /usr/local/lib/python3.7/dist-packages/fairseq
+cp -a /home/Variational-Contrastive-Learning-for-Empathetic-Dialogue-Generation/fairseq_fixed /usr/local/lib/python3.7/dist-packages/fairseq
 ```
 
 
