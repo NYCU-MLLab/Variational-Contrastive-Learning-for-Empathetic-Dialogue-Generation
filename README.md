@@ -63,8 +63,8 @@ Here is pre-trained model we use, we do some modification different from dialogV
 the script `train.sh` has three parameters, namely `p`, `t` and `d`.
 
 - `p`: pretrained model **p**ath
-- `t`: pretrained model **t**ype (`dialogved_standard`, `dialogved_large` or `dialogved_seq2seq`)
-- `d`: fine-tuned **d**ataset (`dailydialog`, 'empatheticdialog_freeze_decoder_no_smooth')
+- `t`: pretrained model **t**ype (`dialogved_large_no_ngram_attn_pre`)
+- `d`: fine-tuned **d**ataset ('empatheticdialog_freeze_decoder_no_smooth')
 
 ```shell
 bash train.sh -p /home/dailydialog_ved_large.pt -t dialogved_large_no_ngram_attn_pre -d empatheticdialog_freeze_decoder_no_smooth
